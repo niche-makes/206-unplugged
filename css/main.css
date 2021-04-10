@@ -85,7 +85,137 @@ textarea {
 
 /* ==========================================================================
    Author's custom styles
+                    ---------MY CODE HERE!!! --------
    ========================================================================== */
+
+/* **** ============ base header / footer styles ============ **** */
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.header-divider {
+
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* nav ul li {    [Skillcrush doesn't style ul li flex]
+  display: flex;
+  border: solid blue 1px;
+} */
+
+/* .footer-content {     [skillcrush doesn't style flex]
+  display: flex;
+  direction: column;
+  flex-wrap: wrap;
+} */
+
+/* .contact, .social {      [skillcrush doesn't style flex]
+  display: flex;
+} */
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* **** ============ Mobile Styles - Homepage ============ **** */
+
+/* -- Hero Area -- */
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-wrap: row wrap;
+}
+
+.hero-area .content-wrapper {
+
+}
+
+/* -- ASIDE (form) -- */
+
+/* aside .content-wrapper {   [Skillcrush doesn't flex the wrapper]*/  
+aside {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* .form-description, .form {   [skillcrush doesn't flex these. why??]
+  display: flex;
+  flex-direction: inherit;
+}
+
+.form {
+  justify-content: space-around;
+} */
+
+/* -- FEATURES -- */
+
+/* Skillcrush does this but I don't think it is correct because it's not flexing the parent of .features-items */
+/* .features {    
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+} */
+
+/* this is the parent */
+.features .content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+
+/* -- REVIEWS -- */
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+
+
+
 
 /* ==========================================================================
    Helper classes
