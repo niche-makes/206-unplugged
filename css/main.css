@@ -103,10 +103,11 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
 }
 
 .header-divider {
-
+  width: 100%;
 }
 
 header nav {
@@ -114,6 +115,7 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
@@ -126,19 +128,27 @@ header nav ul {
   border: solid blue 1px;
 } */
 
-/* .footer-content {     [skillcrush doesn't style flex]
-  display: flex;
-  direction: column;
-  flex-wrap: wrap;
-} */
+footer p {
+  margin: 0;
+}
 
-/* .contact, .social {      [skillcrush doesn't style flex]
+footer .content-wrapper {
   display: flex;
-} */
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 56%;
+  margin: 50px 0;
+
+}
+footer .footer-content {
+  text-align: center;
+  
+}
 
 footer .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -160,48 +170,74 @@ footer .social-icons p {
 }
 
 .hero-area .content-wrapper {
-
+  width: 89%;
 }
+/* when I added the width to the hero area content wrapper it changed the header alignment! */
 
 /* -- ASIDE (form) -- */
 
-/* aside .content-wrapper {   [Skillcrush doesn't flex the wrapper]*/  
-aside {
+aside .content-wrapper {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  
+}  
+
+/* aside {
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-
-/* .form-description, .form {   [skillcrush doesn't flex these. why??]
-  display: flex;
-  flex-direction: inherit;
-}
-
-.form {
-  justify-content: space-around;
 } */
+
+.form-description, .form {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 89%;
+}
+
+.form input {
+  width: 320px;
+  width: 100%;
+  
+}
 
 /* -- FEATURES -- */
 
-/* Skillcrush does this but I don't think it is correct because it's not flexing the parent of .features-items */
-/* .features {    
+
+.features {    
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-} */
+}
+
+.features p {
+  margin: 0;
+}
 
 /* this is the parent */
 .features .content-wrapper {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  width: 89%;
+ 
 }
 
 .features .features-items {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-flow: row wrap;
+  
+}
+
+.fontawesome-icon {
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -213,7 +249,9 @@ aside {
   flex-flow: row wrap;
 }
 
-
+.reviews .content-wrapper {
+  width: 89%;
+}
 
 
 
