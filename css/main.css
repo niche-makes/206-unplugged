@@ -90,6 +90,44 @@ textarea {
 
 /* **** ============ base header / footer styles ============ **** */
 
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+  font-size: 1.1em;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 2.3em;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.9em;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.1em;
+  line-height: 1.2;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .88em;
+}
+
+address {
+  font-style: normal;
+  
+}
+
 header,
 footer {
   display: flex;
@@ -97,17 +135,45 @@ footer {
   align-items: center;
   flex-flow: row wrap;
 }
+header {
+  background-color: #202322;
+}
 
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
   margin: 0;
+  
+  
+  
+}
+header .logo-div {
+  display: flex;
+  width: 100%;
+  height: 42px;
+  margin: 15px 0 10px 0;
+  object-fit: cover;
+  text-align: center;
+}
+
+#logo {
+  max-width: 61%;
+}
+
+header a {
+  color: #e2e3ed;
+}
+
+header a:visited {
+  color: #e2e3ed;
 }
 
 .header-divider {
   width: 100%;
+  border-bottom: solid 1px #3a3a3a;
 }
 
 header nav {
@@ -121,29 +187,40 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 100%;
+  margin: 16px 0;
+  padding: 0;
+  color: #e2e3ed;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  /* border: dotted darkcyan 1px; */
 }
 
-/* nav ul li {    [Skillcrush doesn't style ul li flex]
-  display: flex;
-  border: solid blue 1px;
-} */
+
+
+footer {
+  flex-direction: column;
+  background-color: #202322;
+  color: #e2e3ed;
+}
 
 footer p {
   margin: 0;
 }
 
 footer .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
   width: 56%;
   margin: 50px 0;
-
 }
+
 footer .footer-content {
-  text-align: center;
-  
+  text-align: center; 
+}
+
+footer address {
+  font-style: normal;
+  margin-bottom: 50px;
 }
 
 footer .social-icons {
@@ -152,12 +229,13 @@ footer .social-icons {
   align-items: center;
 }
 
-footer .social-icons p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+footer .copyright {
+  margin-bottom: 10px;
 }
 
+footer h3 {
+  margin: 0 0 20px 0;
+}
 
 /* **** ============ Mobile Styles - Homepage ============ **** */
 
@@ -167,23 +245,52 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   flex-wrap: row wrap;
+  /* width: 100%; */
+  background: url(../img/jake-melara-30679-unsplash.jpg);
+  background-position: 50% 30%;
+  background-size: 334%;
+  height: 500px;
+  
 }
 
 .hero-area .content-wrapper {
+  /* display: flex; */
   width: 89%;
+
+}
+
+.hero-area h1 {
+  color: #e2e3ed;
+  margin-top: 50px; /* 50px total but looks like there's a few px above the h1 - not sure how to get rid of it */
 }
 /* when I added the width to the hero area content wrapper it changed the header alignment! */
 
 /* -- ASIDE (form) -- */
 
+aside {
+  background-color: #527158;
+  color: #e2e3ed;
+}
 aside .content-wrapper {
   
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  
+  padding: 30px 0 54px 0;
 }  
+
+aside h3 {
+  margin: 0;
+}
+
+aside p {
+  margin: 8px 0 30px 0;
+}
+aside input {
+  height: 50px;
+  
+}
 
 /* aside {
   display: flex;
@@ -197,6 +304,7 @@ aside .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   width: 89%;
+  
 }
 
 .form input {
@@ -205,17 +313,47 @@ aside .content-wrapper {
   
 }
 
+.form input[type=text] {
+  font-family: 'Open Sans', sans-serif;
+  font-style: oblique;
+  background-color: #e1e2ea;
+  border: none;
+  margin: 18px 0;
+  color: #9d9ea4;
+}
+
+.form input[type=button] {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  background-color: #2a423a;
+  color: #e1e2ea;
+  border: none;
+  text-transform: uppercase;
+
+}
 /* -- FEATURES -- */
 
 
 .features {    
+  color: #e2e3ed;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url(../img/rawpixel-800820-unsplash1.jpg);
+  background-position: 47% 30%;
+  background-size: 600%;
+  
+}
+
+.features h2 {
+  margin: 50px 0 0 0;
+  
 }
 
 .features p {
   margin: 0;
+  /* margin-bottom: 50px; */
+  text-align: center;
 }
 
 /* this is the parent */
@@ -223,21 +361,27 @@ aside .content-wrapper {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  width: 89%;
- 
+  /* width: 89%; */
+  flex-basis: 89%;
+  margin-bottom: 15px;
 }
 
 .features .features-items {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  
+  flex-basis: 64%;
+  margin-top: 50px;
 }
 
-.fontawesome-icon {
+.features .features-item-description {
+  margin-bottom: 50px;
+}
+.features .fontawesome-icon {
   display: flex;
   justify-content: center;
+  margin-bottom: 38px;
 }
 
 
@@ -247,11 +391,140 @@ aside .content-wrapper {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
+  color: #e2e3ed;
 }
 
 .reviews .content-wrapper {
-  width: 89%;
+  width: 89%;   /* flex-basis vs width? */
+  border: dotted cadetblue 1px;
+  margin: 50px 0;
 }
+
+.reviews h2 {
+  margin: 0;
+}
+
+.review-image-placeholder {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  background-color: paleturquoise;
+  margin-top: 25px;
+}
+
+.reviews p {
+  margin-bottom: 0px;
+}
+
+
+
+
+
+/* ==========================================================================
+   ==========================================================================
+   -------  ABOUT page  ----  MOBILE  -----
+   ==========================================================================
+   ========================================================================== */
+
+
+   .mission {
+    display: flex;
+    justify-content: center;
+    flex-wrap: row wrap;
+    background-color: #527158;
+    color: #e2e3ed;
+  }
+
+  .mission h2 {
+    margin: 0;
+  }
+
+  .mission-content p {
+    border: dotted violet 1px;
+    margin-top: 20px;
+  }
+
+  .mission .content-wrapper {
+    width: 89%;
+    margin: 50px 0;
+  }
+
+  .map-placeholder {
+    width: 100%;
+    height: 450px;
+    background-color: papayawhip;
+  }
+
+  .contact-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: row wrap;
+    background-color: #2a423a;
+    color: #e2e3ed;
+    
+  }
+
+  .contact-section .content-wrapper {
+    width: 89%;
+    margin: 50px 0;
+  }
+
+  .contact-section h2 {
+    margin: 0;
+  }
+  
+  .contact-section address p {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  }
+
+  .contact-section .about-info {
+    margin: 10px 0 10px 0;
+  }
+
+  .contact-section .chat {
+    margin: 15px 0 10px 0;
+  }
+
+
+
+
+  /* ==========================================================================
+   ==========================================================================
+   -------  FAQ page  ----  MOBILE  -----
+   ==========================================================================
+   ========================================================================== */
+
+
+   .faq {
+    display: flex;
+    justify-content: center;
+    flex-wrap: row wrap;
+    background-color: #527158;
+    color: #e2e3ed;
+  }
+  
+  .faq .content-wrapper {
+    width: 89%;
+    margin: 50px 0;
+  }
+
+  .faq-content h4, .faq h2, .faq-content p {
+    margin: 0;
+  }
+ 
+  
+  .faq h4 {
+    margin: 50px 0 10px 0;
+    font-size: 1.14em;
+  }
+
+
+
+
+  
+
 
 
 
@@ -343,15 +616,221 @@ aside .content-wrapper {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /*Tablet styles here */
+
+
+  /* -- TABLET general styles -- */
+
+  .content-wrapper {
+    /* width: 83%; This is what I thought I should do. Why max-width instead of width: %?*/
+    max-width: 640px;
+    /* width: 83%; */
+    margin: 100px 0;
+
+  }
+
+  /* -- TABLET Header -- */
+
+  header {
+    /* justify-content: space-around; [Skillcrush does this: why?] */
+    
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .header-divider {
+    width: 0%;
+  }
+
+  header nav {
+    width: 20%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  .hero-area .content-wrapper {
+    align-items: flex-start;
+  }
+
+
+/* -- TABLET Aside (form) -- */
+
+  aside {
+    display: flex;
+    justify-content: center;
+    border: solid red 1px;
+  }
+
+  aside .content-wrapper {
+    margin: 50px 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: solid blue 1px;
+  }  
+
+  .form-description, .form {
+    margin: 0;
+    width: 40%;
+  }
+
+  aside input {
+    height: 40px;
+  }
+/* -- TABLET Features -- */
+
+.features .content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 89%;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+.features .features-items {
+  justify-content: space-between;
+  align-items: start;
+  width: 81%;
+}
+
+.features article {
+  flex-flow: column wrap;
+  flex-basis: 40%;
+  align-items: center;
+  margin: 26px 0
+}
+
+.fontawesome-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.features-item-description {
+  padding-top: 28px;
+}
+
+/* -- TABLET Reviews -- */
+
+.reviews .content-wrapper {
+  width: 89%;
+  
+}
+
+.reviews .content-wrapper article {
+  display: flex;
+  /* flex-flow: row wrap; */
+  justify-content: space-between;
+  align-items: start; /*Why is this not working?*/
+}
+
+.review-image-placeholder {
+  display: flex;
+  height: 200px;
+  width: 49%;
+  background-color: paleturquoise;
+}
+
+.reviews-copy {
+  width: 49%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+
+/* -- TABLET Footer -- */
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    
+  }
+
+  footer p {
+    margin: 0;
+  }
+
+  footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
+
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer .social {
+    width: 28%;
+  }
+
+  footer .copyright {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+/* -- DESKTOP Base Styles -- */
+  .content-wrapper {
+    max-width: 940px;
+  }
+
+/* -- DESKTOP Header -- */
+
+  header {
+    margin: 22px 0;
+  }
+
+  header nav {
+    width: 14%;
+  }
+
+
+/* -- DESKTOP Aside (form) -- */
+
+  aside {
+    display: flex;
+    justify-content: center;
+    border: solid red 1px;
+  }
+
+  aside .content-wrapper {
+    max-width: 780px;
+    /* margin: 50px 0; */
+    margin: 50px 8.5%;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: solid blue 1px;
+  }  
+
+  aside input {
+    height: 50px;
+  }
+  .form-description, .form {
+    margin: 0;
+    width: 41%;
+  }
+
+/* -- DESKTOP Features -- */
+
+
+
+
+
+
 }
 
 /* ==========================================================================
