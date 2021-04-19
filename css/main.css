@@ -125,7 +125,6 @@ p {
 
 address {
   font-style: normal;
-  
 }
 
 header,
@@ -135,6 +134,7 @@ footer {
   align-items: center;
   flex-flow: row wrap;
 }
+
 header {
   background-color: #202322;
 }
@@ -146,13 +146,10 @@ header .content-wrapper {
   flex-flow: row wrap;
   width: 100%;
   margin: 0;
-  
-  
-  
 }
+
 header .logo-div {
   display: flex;
-  width: 100%;
   height: 42px;
   margin: 15px 0 10px 0;
   object-fit: cover;
@@ -403,6 +400,7 @@ aside input {
 
 .reviews h2 {
   margin: 0;
+  width: 95%;
 }
 
 .review-image-placeholder {
@@ -634,11 +632,18 @@ aside input {
 
   header {
     /* justify-content: space-around; [Skillcrush does this: why?] */
-    
   }
 
+  header .logo-div {
+    width: 34%;
+    margin: 30px 0;
+  }
+
+  #logo {
+  max-width: 100%;
+}
+
   header .content-wrapper {
-    width: 100%;
     justify-content: space-between;
   }
 
@@ -654,8 +659,22 @@ aside input {
     justify-content: space-between;
   }
 
+/* -- TABLET Hero Area -- */
+
   .hero-area .content-wrapper {
     align-items: flex-start;
+  }
+
+  .hero-area h1 {
+    font-size: 2.95em;
+    margin: 0;
+    line-height: 1.05;
+  }
+
+  .hero-area {
+    height: 600px;
+    background-size: 155%;
+    background-position: 50% 40%;
   }
 
 
@@ -664,107 +683,117 @@ aside input {
   aside {
     display: flex;
     justify-content: center;
-    border: solid red 1px;
   }
 
   aside .content-wrapper {
     margin: 50px 0;
     justify-content: space-between;
     align-items: flex-start;
-    border: solid blue 1px;
+    padding: 0;
   }  
 
-  .form-description, .form {
+  aside h3 {
+    font-size: 1.5em;
+    line-height: 1.3;
+  }
+
+  .form {
+    margin: 0;
+    width: 45%;
+  }
+
+  .form-description {
     margin: 0;
     width: 40%;
   }
 
   aside input {
-    height: 40px;
+    height: 45px;
   }
+  
 /* -- TABLET Features -- */
 
-.features .content-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  width: 89%;
-}
-
-.features .features-items {
-  justify-content: space-between;
-  align-items: start;
-  width: 81%;
-}
-
-.features article {
-  flex-flow: column wrap;
-  flex-basis: 40%;
-  align-items: center;
-  margin: 26px 0
-}
-
-.fontawesome-icon {
-  display: flex;
-  justify-content: center;
-}
-
-.features-item-description {
-  padding-top: 28px;
-}
-
-/* -- TABLET Reviews -- */
-
-.reviews .content-wrapper {
-  width: 89%;
-  
-}
-
-.reviews .content-wrapper article {
-  display: flex;
-  /* flex-flow: row wrap; */
-  justify-content: space-between;
-  align-items: start; /*Why is this not working?*/
-}
-
-.review-image-placeholder {
-  display: flex;
-  height: 200px;
-  width: 49%;
-  background-color: paleturquoise;
-}
-
-.reviews-copy {
-  width: 49%;
-  display: flex;
-  flex-flow: row wrap;
-}
-
-
-/* -- TABLET Footer -- */
-
-  footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    
+  .features {  
+    background-position: 53% 0%;
+    background-size: 175%;
   }
 
-  footer p {
+  .features h2 {
+    margin: 0;
+    font-size: 2.3em;
+  }
+
+  .features .content-wrapper {
+    margin-bottom: 100px;
+  }
+
+  .features .features-items {
+    justify-content: space-between;
+    align-items: start;
+    flex-basis: 82.5%;
     margin: 0;
   }
 
-  footer .content-wrapper {
-    width: 65%;
+  .features article {
+    flex-basis: 39%;
+  }
+
+  .features .fontawesome-icon {
+    margin: 50px 0 20px 0;
+  }
+
+  .features .features-item-description {
+    margin: 0;
+  }
+
+/* -- TABLET Reviews -- */
+
+  .reviews .content-wrapper {
+    max-width: 640px;
     margin: 100px 0;
   }
 
+  .reviews .content-wrapper article {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  .reviews h2 {
+    font-size: 2.2em;
+    width: 80%;
+  }
+
+  .review-image-placeholder {
+    width: 48.9%;
+    margin-top: 0;
+  }
+
+  .reviews-copy {
+    width: 48.9%;
+    margin: 0;
+  }
+
+  .reviews h3 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+/* -- TABLET Footer -- */
+
+  footer .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+    border: dotted fuchsia 1px;
+  }
+
   footer .footer-content {
+    width: 82.5%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 100%;
+    border: dotten pink 1px;
+    /* width: 100%; */
   }
 
   footer .contact {
@@ -772,12 +801,30 @@ aside input {
   }
 
   footer .social {
-    width: 28%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 38%;
+    border: dotted lightcoral 1px;
+
   }
 
+  footer .social-icons {
+    border: dotted greenyellow 1px;
+    width: 100%;
+  }
   footer .copyright {
     width: 100%;
     text-align: center;
+  }
+
+  footer h3 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer address {
+    margin: 0;
   }
 }
 
