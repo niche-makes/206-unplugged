@@ -439,7 +439,6 @@ aside input {
   }
 
   .mission-content p {
-    border: dotted violet 1px;
     margin-top: 20px;
   }
 
@@ -460,7 +459,6 @@ aside input {
     flex-wrap: row wrap;
     background-color: #2a423a;
     color: #e2e3ed;
-    
   }
 
   .contact-section .content-wrapper {
@@ -473,17 +471,21 @@ aside input {
   }
   
   .contact-section address p {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+  }
+
+  .contact-section h2 {
+    margin-bottom: 10px;
+  }
+  .contact-section h4 {
+    margin: 0 0 8px 0;
   }
 
   .contact-section .about-info {
-    margin: 10px 0 10px 0;
+    margin-bottom: 15px;
   }
-
-  .contact-section .chat {
-    margin: 15px 0 10px 0;
-  }
+  
 
 
 
@@ -495,7 +497,7 @@ aside input {
    ========================================================================== */
 
 
-   .faq {
+  .faq {
     display: flex;
     justify-content: center;
     flex-wrap: row wrap;
@@ -659,7 +661,56 @@ aside input {
     justify-content: space-between;
   }
 
-/* -- TABLET Hero Area -- */
+  /* -- TABLET Footer -- */
+
+  footer .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+    border: dotted fuchsia 1px;
+  }
+
+  footer .footer-content {
+    width: 82.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: dotten pink 1px;
+    /* width: 100%; */
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer .social {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 38%;
+    border: dotted lightcoral 1px;
+  }
+
+  footer .social-icons {
+    border: dotted greenyellow 1px;
+    width: 100%;
+  }
+
+  footer .copyright {
+    width: 100%;
+    text-align: center;
+  }
+
+  footer h3 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer address {
+    margin: 0;
+    line-height: 1.8;
+  }
+
+/* -- TABLET HOMEPAGE Hero Area -- */
 
   .hero-area .content-wrapper {
     align-items: flex-start;
@@ -678,7 +729,7 @@ aside input {
   }
 
 
-/* -- TABLET Aside (form) -- */
+/* -- TABLET HOMEPAGE Aside (form) -- */
 
   aside {
     display: flex;
@@ -711,7 +762,7 @@ aside input {
     height: 45px;
   }
   
-/* -- TABLET Features -- */
+/* -- TABLET HOMEPAGE Features -- */
 
   .features {  
     background-position: 53% 0%;
@@ -746,7 +797,7 @@ aside input {
     margin: 0;
   }
 
-/* -- TABLET Reviews -- */
+/* -- TABLET HOMEPAGE Reviews -- */
 
   .reviews .content-wrapper {
     max-width: 640px;
@@ -779,53 +830,104 @@ aside input {
     font-size: 1.5em;
   }
 
-/* -- TABLET Footer -- */
+/* ======================
+      -- TABLET ABOUT -- 
+   ====================== */
 
-  footer .content-wrapper {
-    max-width: 640px;
+/* -- TABLET ABOUT Mission -- */  
+  .mission .content-wrapper {
+    width: 83%;
     margin: 100px 0;
-    border: dotted fuchsia 1px;
   }
 
-  footer .footer-content {
-    width: 82.5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    border: dotten pink 1px;
-    /* width: 100%; */
+  .mission h2 {
+    font-size: 2.3em;
   }
 
-  footer .contact {
-    margin-bottom: 0;
+  .mission-content p {
+    margin-top: 26px;
   }
-
-  footer .social {
+  .mission-content {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    width: 38%;
-    border: dotted lightcoral 1px;
-
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .mission .mission-content-left {
+    display: flex;
+    flex-basis: 47%;
   }
 
-  footer .social-icons {
-    border: dotted greenyellow 1px;
-    width: 100%;
-  }
-  footer .copyright {
-    width: 100%;
-    text-align: center;
+  .mission .mission-content-right {
+    display: flex;
+    flex-basis: 47%;
   }
 
-  footer h3 {
-    font-size: 1.5em;
-    margin-bottom: 40px;
+/* -- TABLET ABOUT Map -- */ 
+
+.map-placeholder {
+  height: 350px;
+}
+
+/* -- TABLET ABOUT Contact -- */ 
+
+.contact-section .content-wrapper {
+  margin: 100px 0; 
+}
+
+.contact-section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.26em;
+  width: 90%;
+  line-height: 1.33;
+  margin-bottom: 40px;
+}
+
+.contact-section h4 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.contact-section .contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+.contact-section .about-info, .contact-section .chat {
+  display: flex;
+  flex-basis: 45%;
+  flex-direction: column;
+}
+
+/* ======================
+      -- TABLET FAQ -- 
+   ====================== */
+
+  .faq .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 83%;
+    margin: 100px 0;
   }
 
-  footer address {
-    margin: 0;
+  .faq .content-wrapper .faq-content {
+    display: flex;
+    flex-basis: 45%;
+    flex-flow: column;
+    margin-top: 35px;
   }
+
+  .faq h2 {
+    font-size: 2.3em;
+    
+  }
+  .faq h4 {
+    font-size: .85em;
+    margin: 0 0 10px 0;
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -845,8 +947,13 @@ aside input {
     width: 14%;
   }
 
+/* -- DESKTOP Footer -- */
 
-/* -- DESKTOP Aside (form) -- */
+
+/* -- DESKTOP HOMEPAGE Hero Area -- */
+
+
+/* -- DESKTOP HOMEPAGE Aside (form) -- */
 
   aside {
     display: flex;
@@ -871,9 +978,9 @@ aside input {
     width: 41%;
   }
 
-/* -- DESKTOP Features -- */
+/* -- DESKTOP HOMEPAGE Features -- */
 
-
+/* -- DESKTOP HOMEPAGE Reviews -- */
 
 
 
