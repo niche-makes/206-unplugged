@@ -326,8 +326,8 @@ aside input {
   color: #e1e2ea;
   border: none;
   text-transform: uppercase;
-
 }
+
 /* -- FEATURES -- */
 
 
@@ -339,7 +339,6 @@ aside input {
   background: url(../img/rawpixel-800820-unsplash1.jpg);
   background-position: 47% 30%;
   background-size: 600%;
-  
 }
 
 .features h2 {
@@ -375,6 +374,7 @@ aside input {
 .features .features-item-description {
   margin-bottom: 50px;
 }
+
 .features .fontawesome-icon {
   display: flex;
   justify-content: center;
@@ -394,7 +394,6 @@ aside input {
 
 .reviews .content-wrapper {
   width: 89%;   /* flex-basis vs width? */
-  border: dotted cadetblue 1px;
   margin: 50px 0;
 }
 
@@ -632,10 +631,6 @@ aside input {
 
   /* -- TABLET Header -- */
 
-  header {
-    /* justify-content: space-around; [Skillcrush does this: why?] */
-  }
-
   header .logo-div {
     width: 34%;
     margin: 30px 0;
@@ -664,21 +659,22 @@ aside input {
   /* -- TABLET Footer -- */
 
   footer .content-wrapper {
-    max-width: 640px;
     margin: 100px 0;
-    border: dotted fuchsia 1px;
+    width: 83%;
+    display: flex;
+    justify-content: center;
   }
 
   footer .footer-content {
-    width: 82.5%;
+    width: 81.25%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    border: dotten pink 1px;
     /* width: 100%; */
   }
 
   footer .contact {
+    width: 38%;
     margin-bottom: 0;
   }
 
@@ -687,11 +683,9 @@ aside input {
     flex-flow: row wrap;
     justify-content: center;
     width: 38%;
-    border: dotted lightcoral 1px;
   }
 
   footer .social-icons {
-    border: dotted greenyellow 1px;
     width: 100%;
   }
 
@@ -921,8 +915,8 @@ aside input {
 
   .faq h2 {
     font-size: 2.3em;
-    
   }
+
   .faq h4 {
     font-size: .85em;
     margin: 0 0 10px 0;
@@ -934,40 +928,82 @@ aside input {
 
 /* -- DESKTOP Base Styles -- */
   .content-wrapper {
-    max-width: 940px;
+    max-width: 960px;
   }
 
 /* -- DESKTOP Header -- */
-
-  header {
-    margin: 22px 0;
-  }
 
   header nav {
     width: 14%;
   }
 
+  header .logo-div {
+    margin: 0 0 0 0;
+    height: 100px;
+    align-items: center;
+  }
+
 /* -- DESKTOP Footer -- */
+
+
+footer .content-wrapper {
+  width: 80%;
+}
+footer .footer-content {
+  width: 90%;
+}
+
+footer h3 {
+  font-size: 1.8em;
+  margin-bottom: 30px;
+}
+
+footer address {
+  font-size: 1.3em;
+  line-height: 1.4;
+}
+
+footer .social, footer .contact {
+  width: 24%;
+}
+
+footer .copyright {
+  font-size: 1.35em;
+}
 
 
 /* -- DESKTOP HOMEPAGE Hero Area -- */
 
+.hero-area .content-wrapper {
+  margin: 50px 0;
+}
+
+.hero-area h1 {
+  font-size: 3.6em;
+  letter-spacing: .02em;
+  width: 70%;
+  line-height: 1.2;
+}
+
+.hero-area {
+  background-size: 100%;
+  background-position: 50% 45%;
+
+}
 
 /* -- DESKTOP HOMEPAGE Aside (form) -- */
 
   aside {
     display: flex;
     justify-content: center;
-    border: solid red 1px;
   }
 
   aside .content-wrapper {
-    max-width: 780px;
+    max-width: 800px;
     /* margin: 50px 0; */
     margin: 50px 8.5%;
     justify-content: space-between;
     align-items: flex-start;
-    border: solid blue 1px;
   }  
 
   aside input {
@@ -975,16 +1011,157 @@ aside input {
   }
   .form-description, .form {
     margin: 0;
-    width: 41%;
+    width: 40%;
+  }
+
+  aside h3 {
+    font-size: 1.8em;
+    line-height: 1.25;
+    letter-spacing: .03em;
+  }
+
+  aside p {
+    font-size: 1.2em;
+  }
+
+  aside .form input[type=button] {
+    font-size: 1.4em;
+    letter-spacing: .05em;
   }
 
 /* -- DESKTOP HOMEPAGE Features -- */
 
+.features {
+  background-position: 53% 0%;
+  background-size: 115%;
+}
+.features h2 {
+  margin-bottom: 30px;
+}
+
+.features p {
+  font-size: 1.1em;
+}
+
+.features .features-items {
+  justify-content: space-around;
+  flex-basis: 100%;
+  margin-top: 0px;
+}
+.features article {
+  flex-basis: 20.8%;
+  margin: 0 5%;
+}
+
+.features .fontawesome-icon {
+  margin: 65px 0 20px 0;
+}
+
 /* -- DESKTOP HOMEPAGE Reviews -- */
 
+.reviews .content-wrapper {
+  max-width: 960px;
+}
 
+.reviews .content-wrapper article {
+  padding: 0;
+}
 
+.reviews h2 {
+  font-size: 2.3em;
+  margin-bottom: 90px;
+}
 
+.reviews h3 {
+  font-size: 1.9em;
+}
+
+.reviews p {
+  font-size: 1.1em;
+  margin: 8px 40px 0 0;
+}
+
+.review-image-placeholder {
+  margin-top: 0;
+  height: 300px;
+  width: 48%;
+}
+
+.reviews-copy {
+  width: 48%;
+}
+
+/* ======================
+      -- DESKTOP ABOUT -- 
+   ====================== */
+
+/* -- DESKTOP ABOUT Mission -- */ 
+
+  .mission h2 {
+    font-size: 3em;
+    letter-spacing: .01em;
+    width: 95%;
+  }
+
+  .mission p {
+    font-size: 1.13em;
+  }
+/* -- DESKTOP ABOUT Map -- */ 
+
+  .map-placeholder {
+    height: 450px;
+  }
+/* -- DESKTOP ABOUT Contact -- */ 
+
+  .contact-section h2 {
+    font-size: 3em;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact-section h4 {
+    font-size: 1.9em;
+    margin-bottom: 25px;
+  }
+  .contact-section p {
+    font-size: 1.13em;
+  }
+
+  .contact-section .about-info, .contact-section .chat {
+    flex-basis: 47%;
+  }
+
+/* ======================
+      -- DESKTOP FAQ -- 
+   ====================== */
+
+ 
+  .faq .content-wrapper {
+    max-width: 960px;
+    margin: 100px 0 50px 0;
+  }
+
+  .faq .content-wrapper .faq-content {
+    flex-basis: 47%;
+    margin: 0 0 50px 0;
+  }
+
+  .faq h2 {
+    font-size: 3.02em;
+    margin-bottom: 35px;
+  }
+
+  .faq h4 {
+    font-size: 1.15em;
+    margin: 0 0 10px 0;
+    letter-spacing: .01;
+  }
+
+  .faq p {
+    font-size: 1.1em;
+    line-height: 1.1;
+    letter-spacing: .01;
+  }
 }
 
 /* ==========================================================================
