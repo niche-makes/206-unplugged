@@ -88,15 +88,31 @@ textarea {
                     ---------MY CODE HERE!!! --------
    ========================================================================== */
 
-/* **** ============ base header / footer styles ============ **** */
+/* **** ===================================================== **** */
+/* **** ================== General Styles =================== **** */
+/* **** ===================================================== **** */
 
-a {
-  text-decoration: none;
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+p {
+  font-size: .88em;
 }
 
 ul li {
   list-style-type: none;
   font-size: 1.1em;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
 }
 
 h1, h2, h3, h4 {
@@ -118,14 +134,29 @@ h3 {
   line-height: 1.2;
 }
 
-p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: .88em;
+h4 {
+
+}
+
+img {
+
+}
+
+figure {
+
 }
 
 address {
   font-style: normal;
 }
+
+.content-wrapper {
+
+}
+
+/* **** ===================================================== **** */
+/* **** ============ base header / footer styles ============ **** */
+/* **** ===================================================== **** */
 
 header,
 footer {
