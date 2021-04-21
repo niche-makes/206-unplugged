@@ -139,11 +139,11 @@ h4 {
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -427,12 +427,19 @@ aside input {
   width: 95%;
 }
 
-.review-image-placeholder {
-  display: flex;
-  height: 200px;
+.reviews img {
   width: 100%;
-  background-color: paleturquoise;
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 40%;
+}
+
+.reviews figure {
+  display: flex;
+  width: 100%;
+  background-color: #2a423a;
   margin-top: 25px;
+  overflow: hidden;
 }
 
 .reviews p {
@@ -833,8 +840,12 @@ aside input {
     font-size: 2.2em;
     width: 80%;
   }
+ 
+  .reviews img {
+    object-position: 50% 80%;
+  }
 
-  .review-image-placeholder {
+  .reviews figure {
     width: 48.9%;
     margin-top: 0;
   }
@@ -1106,7 +1117,12 @@ footer .copyright {
   margin: 8px 40px 0 0;
 }
 
-.review-image-placeholder {
+.reviews img {
+  height: 100%;
+  object-position: 50% 100%;
+}
+
+.reviews figure {
   margin-top: 0;
   height: 300px;
   width: 48%;
