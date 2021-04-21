@@ -478,10 +478,21 @@ aside input {
     margin: 50px 0;
   }
 
-  .map-placeholder {
+  .map figure {
+    position: relative;
+    padding-bottom: 125%; /* maintains aspect ratio by dividing: height/width */
+    height: 0; /* padding gives the element the height it needs */
     width: 100%;
-    height: 450px;
-    background-color: papayawhip;
+    overflow: hidden;
+    /* height: 450px; */
+  }
+
+  .map iframe {
+    position: absolute; /*allows the iframe to show up even though the container height is set to 0 - this works because we set the container to relative */
+    top: 0; /*flush with top of div */
+    left: 0; /*flush with left side of div*/
+    width: 100%;
+    height: 100%; /* makes the iframe fill the div 100% */
   }
 
   .contact-section {
@@ -895,8 +906,8 @@ aside input {
 
 /* -- TABLET ABOUT Map -- */ 
 
-.map-placeholder {
-  height: 350px;
+.map figure {
+  padding-bottom: 46%;
 }
 
 /* -- TABLET ABOUT Contact -- */ 
@@ -1149,9 +1160,10 @@ footer .copyright {
   }
 /* -- DESKTOP ABOUT Map -- */ 
 
-  .map-placeholder {
-    height: 450px;
-  }
+.map figure {
+  padding-bottom: 37.5%;
+}
+
 /* -- DESKTOP ABOUT Contact -- */ 
 
   .contact-section h2 {
