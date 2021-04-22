@@ -227,7 +227,6 @@ header nav ul {
 }
 
 
-
 footer {
   flex-direction: column;
   background-color: #202322;
@@ -256,6 +255,14 @@ footer .social-icons {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+footer i {
+  background-color: #527158;
+  font-size: 1.3em;
+  padding: 11px;
+  border-radius: 100px;
+  /* The Instagram icon is a touch more narrow than the others so the circle isn't quite round. What to do? */
 }
 
 footer .copyright {
