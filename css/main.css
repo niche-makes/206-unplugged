@@ -377,6 +377,10 @@ aside input {
   text-align: center;
 }
 
+.features i {
+font-size: 4.2em;
+}
+
 /* this is the parent */
 .features .content-wrapper {
   display: flex;
@@ -811,6 +815,10 @@ aside input {
     font-size: 2.3em;
   }
 
+  .features i {
+    font-size: 5em;
+    }
+
   .features .content-wrapper {
     margin-bottom: 100px;
   }
@@ -827,7 +835,7 @@ aside input {
   }
 
   .features .fontawesome-icon {
-    margin: 50px 0 20px 0;
+    margin: 50px 0 25px 0;
   }
 
   .features .features-item-description {
@@ -1089,6 +1097,10 @@ footer .copyright {
 .features p {
   font-size: 1.1em;
 }
+
+.features i {
+  font-size: 4.6em;
+  }
 
 .features .features-items {
   justify-content: space-around;
